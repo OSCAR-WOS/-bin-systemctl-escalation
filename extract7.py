@@ -5,8 +5,8 @@ with open('100k.txt', 'r') as f:
     lines = f.readlines()
 
     for line in lines:
-        if len(line) == 8:
-            new_file.write(f'{line}')
+        if len(strip(line)) == 7:
+            new_file.write(line)
 
 
 new_file.close()
